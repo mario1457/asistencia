@@ -30,7 +30,7 @@ $res=mysql_query($query);
 <p>Farmacia:
 <select name="edo" onchange="this.form.submit()" >
 <?php if($edo[0]!=''){	?> 
-<option value="<?php echo $edo[0]."|".$edo[1]."|".$edo[2]."|".$edo[3]."|".$edo[4]; ?>"><?php echo $edo[0]; ?></option>
+<option value="<?php echo $edo[0]."|".$edo[1];?>"><?php echo $edo[0]; ?></option>
 <?php } else { ?>
 <option > Elige</option><?php }?>
 <?php while($row=mysql_fetch_array($res))

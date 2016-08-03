@@ -380,7 +380,7 @@ function fciasFaltantes()
         echo "N° DNI";
         echo "</TD>";
         echo "<TD>";
-        echo " Apellido y Nombre  ";
+        echo " Apellido y nombre  ";
         echo "</TD>";
         
     echo "</TR>";

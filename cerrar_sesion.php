@@ -1,7 +1,8 @@
 <?php
+session_start();
 include 'conexion.php';
 session_destroy();
-unset($GLOBALS['user']);
+unset($_SESSION["user"]);
 
 header('Location: index.html');
 ?>

@@ -2,6 +2,13 @@
 include 'conexion.php';
 include 'funciones.php';
 include 'excelwriter.inc.php';
+session_start();
+
+if ( FALSE.empty($_SESSION["user"]) ){
+    
+    header('Location: index.html');
+}
+else {
 
     //creamos las variables de consulta
 
@@ -105,3 +112,8 @@ include 'excelwriter.inc.php';
     </div>
    
   </div>
+
+<?php 
+
+}
+?>
